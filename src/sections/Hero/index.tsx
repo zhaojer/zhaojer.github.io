@@ -84,6 +84,7 @@ const HeroWrapper = styled.div`
 
 const Line = styled.div`
   width: 100%;
+  height: 25vh;
   flex-grow: 1;
 
   position: relative;
