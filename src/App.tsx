@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import Hero from "./sections/Hero";
 import Aboutme from "./sections/Aboutme";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Wrapper>
         <Hero />
         <Aboutme />
+        <Projects />
       </Wrapper>
     </Body>
   )
