@@ -21,7 +21,6 @@ const Paragraph = styled.p`
   line-break: auto;
 
   font-size: 2.5vw;
-  font-family: "Neue Montreal";
   font-weight: 300;
   text-align: justify;
 `;

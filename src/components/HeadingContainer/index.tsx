@@ -33,7 +33,6 @@ const HeadingWrapper = styled.div`
 const Fonts = styled.div`
   flex-grow: 1;
 
-  font-family: "Neue Montreal";
   font-weight: 500;
   line-height: 1;
 
