@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import { FC } from "react";
 
-function HeadingContainer({ number, writeups }: { number: number, writeups: string }) {
+interface HeadingContainerProps {
+  number: number,
+  writeups: string
+}
+
+const HeadingContainer: FC<HeadingContainerProps> = ({ number, writeups }) => {
   return (
     <Container>
       <HeadingWrapper>
