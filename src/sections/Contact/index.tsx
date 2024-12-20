@@ -20,7 +20,7 @@ function Contact() {
             loop
             animationData={lottiePhone}
             play
-            onClick={(event) => {
+            onClick={() => {
               setIsContactOpen((prev) => !prev);
             }}
           />

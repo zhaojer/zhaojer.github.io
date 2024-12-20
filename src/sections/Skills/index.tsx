@@ -6,7 +6,7 @@ import { Textfit } from "react-textfit";
 
 const CATEGORY = ["Frontend", "Backend", "Database", "ML", "Others"];
 
-const profToColor = (prof: integer) => {
+const profToColor = (prof: number) => {
   // proficiency (1, 2, 3): higher == better
   switch (prof) {
     case 1:

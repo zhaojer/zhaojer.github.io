@@ -8,7 +8,6 @@ function Carousal() {
 
   const options = {
     autoPlay: true,
-    axis: "vertical",
     interval: 4000,
     transitionTime: 500,
     infiniteLoop: true,
@@ -23,7 +22,7 @@ function Carousal() {
 
   return (
     <Container>
-      <Carousel {...options}>
+      <Carousel axis="vertical" {...options}>
         {arr.map((el, idx) => {
           return (
             <Span key={idx}>
