@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import Hero from "./sections/Hero";
 import Aboutme from "./sections/Aboutme";
 import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Aboutme />
         <Projects />
+        <Skills />
       </Wrapper>
     </Body>
   )
