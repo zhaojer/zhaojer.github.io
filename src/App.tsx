@@ -5,6 +5,8 @@ import Hero from "./sections/Hero";
 import Aboutme from "./sections/Aboutme";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import Footer from "./sections/Footer";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Aboutme />
         <Projects />
         <Skills />
+        <Footer />
+        <Contact />
       </Wrapper>
     </Body>
   )
