@@ -25,7 +25,6 @@ function Skills() {
 
   useEffect(() => {
     const skillsIntervalId = setInterval(() => {
-      console.log(area);
       setArea((prev) => (prev + 1) % 5);
     }, 6000);
     return () => {clearInterval(skillsIntervalId)}
