@@ -40,7 +40,7 @@ function Skills() {
               {CATEGORY.map((el, idx) => {
                 return (
                   <Category key={idx} $isSelected={idx === area}>
-                    {el}&nbsp;
+                    {el}
                   </Category>
                 );
               })}
@@ -160,6 +160,7 @@ const Category = styled.span<{ $isSelected?: boolean; }>`
   padding: 0 3vw;
 
   color: ${(props) => (props.$isSelected ? "#ffffff" : "#232323")};
+  text-decoration: ${(props) => (props.$isSelected ? "underline" : "none")};
   transition: color 0.8s ease-in-out;
 `;
 

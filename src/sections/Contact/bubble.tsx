@@ -8,9 +8,9 @@ interface BubbleProps {
 const Bubble: FC<BubbleProps> = ({ isContactOpen }) => {
   return (
     <BubbleContainer onClick={() => { }} $isContactOpen={isContactOpen}>
-      <Title>Let's Talk</Title>
+      <Title>Let's connect!</Title>
       <MainWrapper>
-        <Desc>Feel free to send email via </Desc>
+        <Desc>You can reach me at</Desc>
         <EmailWrapper
           href={`mailto:jerryzhaous@gmail.com?subject=hello&body=Sending Email to Jerry Zhao&nbsp`}
         >
