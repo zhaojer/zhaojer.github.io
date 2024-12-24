@@ -20,7 +20,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, repolink, stack
       <MainWrapper $reverseOrder={reverse === true} onClick={handleCardClick}>
         <Description>
           <Title>
-            <span>{title}</span>
+            {title}
           </Title>
           <Desc>{description}</Desc>
           <HorizontalBar />
@@ -78,9 +78,9 @@ const Title = styled.h3`
   position: relative;
   margin: 0;
 
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
-  font-size: 5.5vw;
+  font-size: 4vw;
 
   overflow: hidden;
 `;
@@ -104,7 +104,6 @@ const StackContainer = styled.div`
   width: 100%;
   display: grid;
   grid-gap: 1vmax;
-  grid-template-columns: 1fr 1fr;
 `;
 
 const Stack = styled.li`
@@ -167,8 +166,8 @@ const LinkIcon = styled(FaExternalLinkAlt)`
   width: 1vmax;
   height: 1vmax;
 
-  min-width: 25px;
-  min-height: 25px;
+  min-width: 15px;
+  min-height: 15px;
 
   &.dark {
     position: sticky;

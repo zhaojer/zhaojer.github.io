@@ -11,7 +11,7 @@ function Contact() {
   return (
     <Container>
       <SpellContainer>
-        <Spell>Pretty Interested?&nbsp;&nbsp;</Spell>
+        <Spell>Contact</Spell>
       </SpellContainer>
       <FooterContainer>
         <LottieContainer>

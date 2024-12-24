@@ -25,7 +25,6 @@ function Skills() {
 
   useEffect(() => {
     const skillsIntervalId = setInterval(() => {
-      console.log(area);
       setArea((prev) => (prev + 1) % 5);
     }, 6000);
     return () => {clearInterval(skillsIntervalId)}
@@ -33,7 +32,7 @@ function Skills() {
 
   return (
     <Container>
-      <HeadingContainer number={3} writeups="Skills" />
+      <HeadingContainer number={5} writeups="Skills" />
       <SkillsWrapper>
         <LanguagesContainer id="SkillsSection">
           <LanguageHeader>
@@ -41,7 +40,7 @@ function Skills() {
               {CATEGORY.map((el, idx) => {
                 return (
                   <Category key={idx} $isSelected={idx === area}>
-                    {el}&nbsp;
+                    {el}
                   </Category>
                 );
               })}
@@ -161,6 +160,7 @@ const Category = styled.span<{ $isSelected?: boolean; }>`
   padding: 0 3vw;
 
   color: ${(props) => (props.$isSelected ? "#ffffff" : "#232323")};
+  text-decoration: ${(props) => (props.$isSelected ? "underline" : "none")};
   transition: color 0.8s ease-in-out;
 `;
 

@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Projects() {
   return (
     <Container>
-      <HeadingContainer number={2} writeups="Projects" />
+      <HeadingContainer number={3} writeups="Research" />
       <ProjectContainer>
         <SpellContainer>
           <Spell>Everyone can code,</Spell>
@@ -45,7 +45,7 @@ const PROJECTS = [
     stacks: ["C++ (LLVM)", "Python (PyTorch, Transformers, scikit-learn)"],
   },
   {
-    title: "Flirting Sentiment Analysis",
+    title: "Flirting Analysis",
     description: `An LSTM model and a BERT model, trained/fine-tuned on a public text dataset
       with data augmentation and rigorous hyperparameter tuning,
       detect flirtatious messages with 94% accuracy.`,

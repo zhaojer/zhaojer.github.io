@@ -7,10 +7,10 @@ interface BubbleProps {
 
 const Bubble: FC<BubbleProps> = ({ isContactOpen }) => {
   return (
-    <BubbleContainer onClick={() => { }} isContactOpen={isContactOpen}>
-      <Title>Let's Talk</Title>
+    <BubbleContainer onClick={() => { }} $isContactOpen={isContactOpen}>
+      <Title>Let's connect!</Title>
       <MainWrapper>
-        <Desc>Feel free to send email via </Desc>
+        <Desc>You can reach me at</Desc>
         <EmailWrapper
           href={`mailto:jerryzhaous@gmail.com?subject=hello&body=Sending Email to Jerry Zhao&nbsp`}
         >
@@ -23,7 +23,7 @@ const Bubble: FC<BubbleProps> = ({ isContactOpen }) => {
 
 export default Bubble;
 
-const BubbleContainer = styled.div<{ isContactOpen?: boolean; }>`
+const BubbleContainer = styled.div<{ $isContactOpen?: boolean; }>`
   width: 70vw;
   min-height: max(40vh, 50px);
 
@@ -43,7 +43,7 @@ const BubbleContainer = styled.div<{ isContactOpen?: boolean; }>`
   border-radius: 10px;
 
   transform-origin: bottom center;
-  transform: ${(props) => (props.isContactOpen ? "scale(100%)" : "scale(0%)")};
+  transform: ${(props) => (props.$isContactOpen ? "scale(100%)" : "scale(0%)")};
   transition: transform 0.2s ease-in;
 
   &::before {

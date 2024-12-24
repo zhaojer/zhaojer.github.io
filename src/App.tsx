@@ -5,6 +5,8 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
+import WorkExperience from "./sections/Work";
+import TeachingExperience from "./sections/Teaching";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <Wrapper>
         <Hero />
         <Aboutme />
+        <WorkExperience />
         <Projects />
+        <TeachingExperience />
         <Skills />
         <Footer />
         <Contact />
