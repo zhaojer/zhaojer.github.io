@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Projects() {
   return (
     <Container>
-      <HeadingContainer number={2} writeups="Projects" />
+      <HeadingContainer number={3} writeups="Research" />
       <ProjectContainer>
         <SpellContainer>
           <Spell>Everyone can code,</Spell>

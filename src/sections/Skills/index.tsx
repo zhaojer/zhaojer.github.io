@@ -32,7 +32,7 @@ function Skills() {
 
   return (
     <Container>
-      <HeadingContainer number={3} writeups="Skills" />
+      <HeadingContainer number={4} writeups="Skills" />
       <SkillsWrapper>
         <LanguagesContainer id="SkillsSection">
           <LanguageHeader>

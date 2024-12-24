@@ -5,7 +5,7 @@ import WorkTimeline from "./work";
 function WorkExperience() {
   return (
     <Container>
-      <HeadingContainer number={2} writeups="Work Experience" />
+      <HeadingContainer number={2} writeups="Work" />
       <ContentContainer>
         <WorkTimeline />
       </ContentContainer>
