@@ -13,3 +13,18 @@ body {
 
   height: 100vh;
 }
+
+/* Redefinition of vertical timeline classes */
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-icon {
+    margin-left: -2vmax !important;
+  }
+}
+
+.vertical-timeline-element-date {
+  font-size: 1vmax !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0px 0px 4px 2px grey !important;
+}
