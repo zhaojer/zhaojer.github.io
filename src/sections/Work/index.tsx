@@ -2,16 +2,22 @@ import styled from "styled-components";
 import HeadingContainer from "../../components/HeadingContainer";
 import WorkTimeline from "./work";
 
-function WorkExperience() {
+import { forwardRef } from "react";
+
+interface WorkExperienceProps {
+  // empty props
+}
+
+const WorkExperience = forwardRef<HTMLDivElement, WorkExperienceProps>(({ }, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <HeadingContainer number={2} writeups="Work" />
       <ContentContainer>
         <WorkTimeline />
       </ContentContainer>
     </Container>
   );
-}
+});
 
 export default WorkExperience;
 

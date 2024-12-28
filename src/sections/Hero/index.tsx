@@ -1,33 +1,42 @@
 import styled from "styled-components";
+import { FC } from "react";
 import { IoSchool } from "react-icons/io5";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-function Hero() {
+interface HeroProps {
+  scrollToAboutMe: () => void,
+  scrollToWork: () => void,
+  scrollToProject: () => void,
+  scrollToTeaching: () => void,
+  scrollToContact: () => void,
+}
+
+const Hero: FC<HeroProps> = ({scrollToAboutMe, scrollToWork, scrollToProject, scrollToTeaching, scrollToContact}) => {
   return (
     <Container>
       <HeroWrapper>
-        <Line1>
+        <Line1 onClick={scrollToAboutMe}>
           <Icon1 />
           <div>
             i <Gray>L</Gray>eArn
           </div>
         </Line1>
-        <Line2>
+        <Line2 onClick={scrollToWork}>
           <div>
             i Devel<Gray>O</Gray>p
           </div>
           <Icon2 />
         </Line2>
-        <Line3>
+        <Line3 onClick={scrollToProject}>
           <Icon3 />
           <div>
             i inNo<Gray>V</Gray>ate
           </div>
         </Line3>
-        <Line4>
+        <Line4 onClick={scrollToTeaching}>
           <div>
             i m<Gray>E</Gray>ntoR
           </div>
@@ -35,7 +44,7 @@ function Hero() {
         </Line4>
       </HeroWrapper>
       <BarcodeContainer>
-        <Barcode>Jerry</Barcode>
+        <Barcode onClick={scrollToContact} >Jerry</Barcode>
         <LinksContainer>
           <a
             href="https://github.com/zhaojer/"
@@ -100,6 +109,8 @@ const Line = styled.div`
   color: white;
 
   &:after {
+    cursor: pointer;
+
     content: "";
     position: absolute;
     bottom: 0;
@@ -205,6 +216,8 @@ const BarcodeContainer = styled.div`
 `;
 
 const Barcode = styled.span`
+  cursor: pointer;
+
   color: white;
   font-size: 5vmax;
   font-family: "Libre Barcode 39 Text";
