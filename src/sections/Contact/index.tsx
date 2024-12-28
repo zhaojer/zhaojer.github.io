@@ -5,11 +5,17 @@ import Lottie from "react-lottie-player";
 import lottiePhone from "../../assets/lottie/phone.json";
 import Bubble from "./bubble";
 
-function Contact() {
+import { forwardRef } from "react";
+
+interface ContactProps {
+  // empty props
+}
+
+const Contact = forwardRef<HTMLDivElement, ContactProps>(({ }, ref) => {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
-    <Container>
+    <Container ref={ref}>
       <SpellContainer>
         <Spell>Contact</Spell>
       </SpellContainer>
@@ -31,7 +37,7 @@ function Contact() {
       </FooterContainer>
     </Container>
   );
-}
+});
 
 export default Contact;
 

@@ -2,16 +2,22 @@ import styled from "styled-components";
 import HeadingContainer from "../../components/HeadingContainer";
 import TeachingTimeline from "./teaching";
 
-function TeachingExperience() {
+import { forwardRef } from "react";
+
+interface TeachingExperienceProps {
+  // empty props
+}
+
+const TeachingExperience = forwardRef<HTMLDivElement, TeachingExperienceProps>(({ }, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <HeadingContainer number={4} writeups="Teaching" />
       <ContentContainer>
         <TeachingTimeline />
       </ContentContainer>
     </Container>
   );
-}
+});
 
 export default TeachingExperience;
 

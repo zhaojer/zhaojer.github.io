@@ -3,9 +3,15 @@ import ProjectCard from "../../components/ProjectCard";
 import Carousal from "./carousal";
 import styled from "styled-components";
 
-function Projects() {
+import { forwardRef } from "react";
+
+interface ProjectsProps {
+  // empty props
+}
+
+const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ }, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <HeadingContainer number={3} writeups="Research" />
       <ProjectContainer>
         <SpellContainer>
@@ -31,7 +37,7 @@ function Projects() {
       </ProjectContainer>
     </Container>
   );
-}
+});
 
 export default Projects;
 

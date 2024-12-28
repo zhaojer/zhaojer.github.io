@@ -2,9 +2,15 @@ import HeadingContainer from "../../components/HeadingContainer";
 import styled from "styled-components";
 import Introduction from "./introduction";
 
-function AboutMe() {
+import { forwardRef } from "react";
+
+interface AboutMeProps {
+  // empty props
+}
+
+const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>(({ }, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <HeadingContainer number={1} writeups="About Me" />
       <ContentContainer>
         <Description>
@@ -13,7 +19,7 @@ function AboutMe() {
       </ContentContainer>
     </Container>
   );
-}
+});
 
 export default AboutMe;
 
