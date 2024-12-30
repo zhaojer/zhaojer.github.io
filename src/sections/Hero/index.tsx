@@ -4,7 +4,7 @@ import { IoSchool } from "react-icons/io5";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 
 interface HeroProps {
   scrollToAboutMe: () => void,
@@ -46,6 +46,13 @@ const Hero: FC<HeroProps> = ({scrollToAboutMe, scrollToWork, scrollToProject, sc
       <BarcodeContainer>
         <Barcode onClick={scrollToContact} >Jerry</Barcode>
         <LinksContainer>
+          <a
+            href="https://www.youtube.com/@jz1729"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <YoutubeIcon />
+          </a>
           <a
             href="https://github.com/zhaojer/"
             target="_blank"
@@ -238,6 +245,12 @@ const GithubIcon = styled(AiFillGithub)`
 `;
 
 const LinkedinIcon = styled(AiFillLinkedin)`
+  color: white;
+  width: 3vmax;
+  height: 3vmax;
+`;
+
+const YoutubeIcon = styled(AiFillYoutube)`
   color: white;
   width: 3vmax;
   height: 3vmax;
