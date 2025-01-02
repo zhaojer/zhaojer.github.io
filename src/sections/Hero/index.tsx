@@ -14,7 +14,7 @@ interface HeroProps {
   scrollToContact: () => void,
 }
 
-const Hero: FC<HeroProps> = ({scrollToAboutMe, scrollToWork, scrollToProject, scrollToTeaching, scrollToContact}) => {
+const Hero: FC<HeroProps> = ({ scrollToAboutMe, scrollToWork, scrollToProject, scrollToTeaching, scrollToContact }) => {
   return (
     <Container>
       <HeroWrapper>
@@ -68,6 +68,14 @@ const Hero: FC<HeroProps> = ({scrollToAboutMe, scrollToWork, scrollToProject, sc
             <LinkedinIcon />
           </a>
         </LinksContainer>
+        <ResumeContainer>
+          <ResumeLink href="/resumes/JerryResume2025.pdf" target="_blank" rel="noopener noreferrer">
+            Résumé
+          </ResumeLink>
+          <ResumeLink href="/resumes/JerryCV2025.pdf" target="_blank" rel="noopener noreferrer">
+            CV
+          </ResumeLink>
+        </ResumeContainer>
       </BarcodeContainer>
     </Container>
   );
@@ -254,4 +262,17 @@ const YoutubeIcon = styled(AiFillYoutube)`
   color: white;
   width: 3vmax;
   height: 3vmax;
+`;
+
+const ResumeContainer = styled.div`
+  font-size: 1.5vmax;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+`;
+
+const ResumeLink = styled.a`
+  color: white;
 `;
