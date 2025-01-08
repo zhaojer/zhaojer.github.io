@@ -21,24 +21,24 @@ const Hero: FC<HeroProps> = ({ scrollToAboutMe, scrollToWork, scrollToProject, s
         <Line1 onClick={scrollToAboutMe}>
           <Icon1 />
           <div>
-            i <Gray>L</Gray>eArn
+            i <Gray>L</Gray>eArn,
           </div>
         </Line1>
         <Line2 onClick={scrollToWork}>
           <div>
-            i Devel<Gray>O</Gray>p
+            Devel<Gray>O</Gray>p,
           </div>
           <Icon2 />
         </Line2>
         <Line3 onClick={scrollToProject}>
           <Icon3 />
           <div>
-            i inNo<Gray>V</Gray>ate
+            inNo<Gray>V</Gray>ate,
           </div>
         </Line3>
         <Line4 onClick={scrollToTeaching}>
           <div>
-            i m<Gray>E</Gray>ntoR
+            m<Gray>E</Gray>ntoR.
           </div>
           <Icon4 />
         </Line4>

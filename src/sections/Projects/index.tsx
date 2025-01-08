@@ -15,9 +15,9 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ }, ref) => {
       <HeadingContainer number={3} writeups="Research" />
       <ProjectContainer>
         <SpellContainer>
-          <Spell>Everyone can code,</Spell>
+          <Spell>I am commited to</Spell>
           <Spell className="pink">
-            But not everyone can write the <Carousal />
+            writing code that embodies <Carousal />
           </Spell>
         </SpellContainer>
         <CardContainer>
